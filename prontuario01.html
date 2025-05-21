@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="shortcut icon" href="assets/img/icon-cruz-azul.ico" type="image/x-icon">
+    <title>Prontuário</title>
+</head>
+<body>
+    <div class="main-container-prontuario2">
+
+        <div class="prontuario-header2">
+            <div class="prontuario-header_col1_2">
+                <img src="assets/img/logo-cruz-azul.png" alt="logo-santa-cruz">
+            </div>
+
+            <div class="prontuario-header_col2_2">
+                <h1>PRONTUÁRIO</h1>
+            </div>
+        </div>
+
+        <div class="prontuario-former2">
+            <div class="prontuario-former_questions2">
+                <p>1 -  A demarcação da lateralidade foi realizada corretamente?</p>
+                <label class="prontuario-former_label2">
+                    <input type="checkbox" name="lateralidade" value="sim">SIM
+                    <input type="checkbox" name="lateralidade" value="nao">NÃO
+                    <input type="checkbox" name="lateralidade" value="indefinido">N/A
+                </label>
+            </div>
+
+            <div class="prontuario-former_questions2">
+                <p>2 - Preenchimento dos termos cirúrgico e anestésico estavam corretos?</p>
+                <label class="prontuario-former_label2">
+                    <input type="checkbox" name="termos" value="sim">SIM
+                    <input type="checkbox" name="termos" value="nao">NÃO
+                </label>
+            </div>
+
+            <div class="prontuario-former_questions2">
+                <p>3 - O quadro de cirurgia segura estava preenchido adequadamente?</p>
+                <label class="prontuario-former_label2">
+                    <input type="checkbox" name="segura" value="sim">SIM
+                    <input type="checkbox" name="segura" value="nao">NÃO
+                </label>
+            </div>
+
+            <div class="prontuario-former_questions2">
+                <p>4 - O antibiótico profilático foi administrado até 1 hora antes da incisão?</p>
+                <label class="prontuario-former_label2">
+                    <input type="checkbox" name="profilatico" value="sim">SIM
+                    <input type="checkbox" name="profilatico" value="nao">NÃO
+                </label>
+            </div>
+
+            <div class="prontuario-former_questions2">
+                <p>5 - Houve problemas com os equipamentos?</p>
+                <label class="prontuario-former_label2">
+                    <input type="checkbox" name="problemas" value="sim">SIM
+                    <input type="checkbox" name="problemas" value="nao">NÃO
+                </label>
+            </div>
+
+            <div class="prontuario-former_questions2">
+                <p>5.1 - Quais problemas?</p>
+                <label class="prontuario-former_label2">
+                    <input class="input_question" type="text" name="queda">
+                </label>
+            </div>
+
+            <div class="prontuario-former_questions2">
+                <p>6 - Houve alguma intercorrência que julgue importante?</p>
+                <label class="prontuario-former_label2">
+                    <input type="checkbox" name="intercorrencia" value="sim">SIM
+                    <input type="checkbox" name="intercorrencia" value="nao">NÃO
+                </label>
+            </div>
+
+            <div class="prontuario-former_questions2">
+                <p>6.1 - Quais intercorrências?</p>
+                <label class="prontuario-former_label2">
+                    <input class="input_question" type="text" name="queda">
+                </label>
+            </div>
+        </div>
+
+        <div class="prontuario-former_buttons2">
+            <button class="button-send">
+                <a href="prontuario02.html">Enviar</a>
+            </button>
+            <button>
+                Cancelar
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      const groupName = checkbox.name;
+
+      if (checkbox.checked) {
+        document.querySelectorAll(`input[name="${groupName}"]`).forEach(other => {
+          if (other !== checkbox) {
+            other.checked = false;
+          }
+        });
+      }
+    });
+  });
+</script>
+</body>
+</html>

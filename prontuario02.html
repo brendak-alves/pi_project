@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="shortcut icon" href="assets/img/icon-cruz-azul.ico" type="image/x-icon">
+    <title>Prontuário</title>
+</head>
+<body>
+    <div class="main-container-prontuario">
+
+        <div class="prontuario-header">
+            <div class="prontuario-header_col1">
+                <img src="assets/img/logo-cruz-azul.png" alt="logo-santa-cruz">
+            </div>
+
+            <div class="prontuario-header_col2">
+                <h1>PRONTUÁRIO</h1>
+            </div>
+        </div>
+
+        <div class="prontuario-former">
+            <div class="prontuario-former_questions">
+                <p>1- Foi realizada a contagem de gases e/ou compressas?</p>
+                <label class="prontuario-former_label">
+                    <input type="checkbox" name="gases" value="sim">SIM
+                    <input type="checkbox" name="gases" value="nao">NÃO
+                    <input type="checkbox" name="gases" value="indefinido">N/A
+                </label>
+            </div>
+
+            <div class="prontuario-former_questions">
+                <p>2 - Foi realizada a contagem de agulhas e instrumentais?</p>
+                <label class="prontuario-former_label">
+                    <input type="checkbox" name="agulhas" value="sim">SIM
+                    <input type="checkbox" name="agulhas" value="nao">NÃO
+                </label>
+            </div>
+
+            <div class="prontuario-former_questions">
+                <p>3 - Houve lesão por posicionamento?</p>
+                <label class="prontuario-former_label">
+                    <input type="checkbox" name="lesao" value="sim">SIM
+                    <input type="checkbox" name="lesao" value="nao">NÃO
+                </label>
+            </div>
+
+            <div class="prontuario-former_questions">
+                <p>4 - Houve queda de paciente?</p>
+                <label class="prontuario-former_label">
+                    <input type="checkbox" name="queda" value="sim">SIM
+                    <input type="checkbox" name="queda" value="nao">NÃO
+                </label>
+            </div>
+        </div>
+
+        <div class="prontuario-former_buttons">
+            <button>
+                Enviar
+            </button>
+            <button>
+                Cancelar
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      const groupName = checkbox.name;
+
+      if (checkbox.checked) {
+        document.querySelectorAll(`input[name="${groupName}"]`).forEach(other => {
+          if (other !== checkbox) {
+            other.checked = false;
+          }
+        });
+      }
+    });
+  });
+</script>
+</body>
+</html>

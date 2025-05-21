@@ -1,0 +1,614 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/* Página de login */
+
+.body-login {
+  background: linear-gradient(to left, #7cb184cf, #dbe4ea46, #e5e7eb);
+  height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  background: linear-gradient(to right, #00a3dec1, #dbe4ea46, #ffffff);
+  border: 2px solid #cfe7e1;
+  box-shadow: 1px 10px 20px 2px rgba(0, 0, 0, 0.167);
+  border-radius: 1rem;
+  display: flex;
+  height: 40rem;
+  width: 80%;
+}
+
+.main-container_login {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container_login__form {
+  border: 2px solid #cfe7e1;
+  background-color: #f2f3f5;
+  height: 85%;
+  width: 40%;
+  box-shadow: 1px 1px 30px 2px rgba(0, 0, 0, 0.141);
+  border-radius: 0.8rem;
+}
+
+.main-container_login__form > h1 {
+  font-weight: 500;
+  font-style: normal;
+  color: #005b94;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.main-container_login__form___input {
+  display: flex;
+  flex-direction: column;
+  height: 35%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+}
+
+.main-container_login__form___input___user,
+.main-container_login__form___input___password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid rgba(128, 128, 128, 0);
+  background-color: rgba(128, 128, 128, 0.112);
+  border-radius: 0.8rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  height: 3.3rem;
+  transition: border-color 0.3s ease;
+  width: 65%;
+}
+
+.main-container_login__form___input___user:focus-within {
+  border-color: #60a5ae;
+}
+
+.main-container_login__form___input___user > input {
+  width: 70%;
+  height: 65%;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.main-container_login__form___input___user > input:focus {
+  outline: none;
+}
+
+.main-container_login__form___links {
+  font-size: 0.8rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-paragraph_password {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: rgb(116, 116, 116);
+}
+
+.form-paragraph_forgot {
+  color: rgb(116, 116, 116);
+}
+
+.main-container_login__form___input > input {
+  border-style: none;
+  background-color: rgba(128, 128, 128, 0.112);
+  border-radius: 0.8rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  height: 3.3rem;
+  width: 65%;
+}
+
+.main-container_login__form___input > input:focus {
+  outline: 1px solid #60a5ae;
+}
+
+.main-container_login__form___buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+}
+
+.main-container_login__form___buttons > p {
+  color: rgb(116, 116, 116);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+span {
+  color: rgb(116, 116, 116);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 3rem;
+}
+
+.main-container_login__form___buttons > button {
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.137);
+  background-color: #005b94;
+  width: 65%;
+  height: 3.3rem;
+  border-radius: 0.8rem;
+  transition: background-color 0.5s ease;
+}
+
+.main-container_login__form___buttons > button:hover {
+  background-color: #83b88c;
+}
+
+.main-container_login__buttons {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: start;
+}
+
+.main-container_login__buttons > button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.7rem;
+  height: 60%;
+  width: 11%;
+}
+
+.main-container_login__buttons > button > img {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.main-container_login__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 50%;
+}
+
+/* Página de registro */
+
+.body-register {
+  height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: linear-gradient(to top, #7cb18447, #ffffff2f, #00a3de43);
+}
+
+.header-register {
+  background: transparent;
+  overflow-y: hidden;
+  color: #005b94;
+  height: 19%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.header-register_img {
+  height: 9rem;
+  padding: 1rem;
+}
+
+.main-register {
+  color: #005b94;
+  height: 70%;
+  width: 90%;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-register_cracha,
+.main-register_cpf,
+.main-register_setor,
+.main-register_cargo {
+  height: 80%;
+  width: 53.4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.main-register_name,
+.main-register_email,
+.main-register_senha {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.main-registe-title {
+  font-size: 18px;
+  width: 4rem;
+}
+
+.main-registe-input {
+  border-style: none;
+  height: 50%;
+  width: 58%;
+  font-size: 1.1rem;
+  background-color: rgba(251, 251, 251, 0.874);
+  border-radius: 0.4rem;
+  box-shadow: 1px 1px 15px 2px rgba(24, 24, 24, 0.068);
+  transition: border-color 0.3s ease;
+  padding-left: 10px;
+}
+
+.main-registe-input:focus-within {
+  border-color: #60a5ae;
+}
+
+.main-registe-input:focus {
+  outline: 1px solid #60a5ae;
+}
+
+.main-registe-input_half {
+  border-style: none;
+  width: 34.5%;
+  height: 50%;
+  background-color: rgb(251, 251, 251);
+  border-radius: 0.4rem;
+  box-shadow: 1px 1px 15px 2px rgba(24, 24, 24, 0.068);
+  transition: border-color 0.3s ease;
+  padding-left: 10px;
+}
+
+.main-registe-input_half:focus-within {
+  border-color: #60a5ae;
+}
+
+.main-registe-input_half:focus {
+  outline: 1px solid #60a5ae;
+}
+
+.main-register-buttons_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.main-register_buttons {
+  height: 63%;
+  width: 75%;
+  display: flex;
+  gap: 3.8rem;
+  margin-left: 7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-register_buttons_button {
+  text-align: center;
+  height: 2.5rem;
+  width: 31%;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.137);
+  background-color: #005b94;
+  border-radius: 0.8rem;
+  transition: background-color 0.5s ease;
+}
+
+.main-register_buttons_button:hover {
+  background-color: #83b88c;
+}
+
+.main-register_buttons_button > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  display: block;
+}
+
+/*Prontuário*/
+
+.main-container-prontuario {
+  background: linear-gradient(to top, #7cb1846f, #ffffff3d, #00a3de5b);
+  /* border: 1px solid black; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 2%; */
+  margin: 0;
+}
+
+.prontuario-header {
+  background-color: white;
+  color: #005b94;
+  box-shadow: -8px 0 16px rgba(0, 0, 0, 0.1), 8px 0 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 25%;
+  padding-top: 1%;
+  /* border: 1px solid blue; */
+}
+
+.prontuario-header_col1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  /* border: 2px solid black; */
+  overflow-y: hidden;
+}
+
+.prontuario-header_col1 > img {
+  width: 8rem;
+  height: 9.5rem;
+  padding: 1rem;
+}
+
+.prontuario-header_col2 {
+  font-size: 1rem;
+  height: 100%;
+  /* border: 2px solid green; */
+  width: 62%;
+  display: flex;
+  align-items: end;
+}
+
+.prontuario-former {
+  background-color: white;
+  width: 70%;
+  height: 80%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-left: 8%;
+}
+
+.prontuario-former_questions {
+  width: 90%;
+  height: 15%;
+  /* border: 3px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: end;
+}
+
+.prontuario-former_questions > p {
+  /* border-radius: rem; */
+  /* border: 1px solid black; */
+  background-color: #005b94;
+  color: white;
+  width: 77%;
+  height: 41%;
+  padding-top: 0.7%;
+  padding-left: 4%;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.prontuario-former_label {
+  color: black;
+  padding-left: 5rem;
+  height: 30%;
+  width: 40%;
+  display: flex;
+  justify-content: start;
+  gap: 1.5rem;
+  /* border: 2px solid yellowgreen; */
+  align-self: flex-start;
+}
+
+.prontuario-former_buttons {
+  box-shadow: -8px 0 16px #e7f0e8, sombra à esquerda 8px 0 16px #e7f0e8;
+  /* border: 1px solid #e7f0e8; */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  /* padding-bottom: 2%; */
+  gap: 13%;
+  width: 70%;
+  height: 11%;
+  background-color: white;
+}
+
+.prontuario-former_buttons > button {
+  border: none;
+  background-color: #005b94;
+  color: white;
+  font-size: 1rem;
+  height: 60%;
+  width: 12%;
+  border-radius: 0.5rem;
+}
+
+.button-send > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  display: block;
+}
+
+/*Prontuario 2*/
+
+.main-container-prontuario2 {
+  background: linear-gradient(to top, #7cb1846f, #ffffff3d, #00a3de5b);
+  border: 1px solid black;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 2%; */
+  margin: 0;
+}
+
+.prontuario-header2 {
+  background-color: white;
+  color: #005b94;
+  box-shadow: -8px 0 16px rgba(0, 0, 0, 0.1), 8px 0 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 25%;
+  padding-top: 1%;
+  /* border: 1px solid blue; */
+}
+
+.prontuario-header_col1_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  /* border: 2px solid black; */
+}
+
+.prontuario-header_col1_2 > img {
+  width: 8rem;
+  height: 9.5rem;
+  padding: 1rem;
+}
+
+.prontuario-header_col2_2 {
+  font-size: 1rem;
+  height: auto;
+  min-height: 20vh;
+  /* border: 2px solid green; */
+  width: 62%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.prontuario-former2 {
+  padding-top: 4%;
+  background-color: white;
+  width: 70%;
+  height: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-left: 3%;
+}
+
+.prontuario-former_questions2 {
+  width: 85%;
+  height: 5rem;
+  /* border: 3px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: end;
+}
+
+.prontuario-former_questions2 > p {
+  /* border: 1px solid black; */
+  background-color: #005b94;
+  color: white;
+  width: 77%;
+  height: 39%;
+  padding-top: 0.7%;
+  padding-left: 4%;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.prontuario-former_label2 {
+  color: black;
+  padding-left: 5rem;
+  height: 2rem;
+  width: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+  /* border: 2px solid yellowgreen; */
+}
+
+.input_question {
+  padding-left: 2%;
+  border: none;
+  border-bottom: 1.5px solid black;
+  height: 2rem;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.input_question:focus {
+  border: none;
+  border-bottom: 2px solid #00a3de; /* só a borda inferior muda */
+  outline: none; /* reforça a remoção do contorno */
+  background-color: transparent; /* garante que o fundo não mude */
+}
+
+.prontuario-former_buttons2 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 1.8rem;
+  gap: 13%;
+  width: 70%;
+  height: 5rem;
+  background-color: white;
+}
+
+.prontuario-former_buttons2 > button {
+  border: none;
+  background-color: #005b94;
+  color: white;
+  font-size: 1rem;
+  height: 67%;
+  width: 12%;
+  border-radius: 0.5rem;
+}
