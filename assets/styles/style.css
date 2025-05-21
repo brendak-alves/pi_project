@@ -612,3 +612,18 @@ span {
   width: 12%;
   border-radius: 0.5rem;
 }
+
+.fluxograma-body {
+  background: linear-gradient(to top, #7cb1846f, #ffffff3d, #00a3de5b);
+}
+.fluxograma-container {
+  display: flex;
+  justify-content: center;
+}
+
+.fluxograma {
+  display: flex;
+  justify-content: center;
+  height: 60%;
+  width: 80%;
+}
